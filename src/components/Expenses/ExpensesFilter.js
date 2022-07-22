@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./ExpensesFilter.css";
 
 const ExpensesFilter = (props) => {
-  const [enteredFilter, setEnteredFilter] = useState("");
+  const [filteredYear, setFilteredYear] = useState("");
   const dropdownChangeHandler = (event) => {
     props.onChangeFilter(event.target.value);
   };
